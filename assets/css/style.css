@@ -60,7 +60,7 @@ html, body {
 }
 
 .header-nav a:hover {
-	color: #DDD;
+	color: #27AE60;
 }
 
 .header-nav ul {
@@ -110,6 +110,53 @@ html, body {
 
 }
 
+input:focus {
+	outline: 0;
+}
+
+.overzicht-sub-header {
+	background: #27AE60;
+	height: 30px;
+	top:40px;
+	color: #FFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10pt;
+}
+
+
+.overzicht-sub-header ul {
+	list-style-type: none; /*to remove bullets*/
+    text-align:justify;
+}
+
+.overzicht-sub-header ul li {
+	display:inline-block;
+	padding:9px 5px;
+}
+
+.overzicht-sub-header ul:after { 
+	content:' '; 
+	display:inline-block; 
+	width: 100%;
+}
+
+.subnav-active {
+	background: #FFF;
+	color: #27AE60;
+}
+
+.overzicht-sub-header a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.subnav-active a {
+	color: #27AE60;
+}
+
+.overzicht-sub-header a:hover {
+	color: #2ECC71;
+}
 
 /* #Tablet (portrait)
 ======================= */
