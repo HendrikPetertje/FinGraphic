@@ -42,14 +42,25 @@ html, body {
 }
 
 .header-logo {
-	padding: 7.5px 0 ;
+	padding: 2.5px 0 ;
 }
 
 .header-nav {
-	left:0;
-	right:0;
-	background: yellow;
-	text-align: center;
+	margin: 0 0  0 290px;
+	color: #FFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+
+}
+
+.header-nav a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.header-nav a:hover {
+	color: #DDD;
 }
 
 .header-nav ul {
@@ -59,7 +70,44 @@ html, body {
 }
 
 .header-nav ul li {
-	float: left;
+	float:left;
+	text-align: center;
+	width: 80px;
+	margin:0 20px;
+	padding: 12px 0;
+	height: 16px;
+}
+
+.nav-active {
+	background: url(../images/header/nav-active.png) top repeat-x #27AE60;
+}
+
+.header-search {
+	float: right;
+	margin: 10px 0;
+}
+
+.header-search-text {
+	width: 150px;
+	height: 20px;
+	border: 0;
+	padding: 0 5px;
+	background: #FFF;
+	font-size: 10pt;
+	font-family: 'Montserrat', sans-serif;
+	color:#27AE60;
+	font-weight: bold;
+
+}
+
+.header-search-submit {
+	width: 20px;
+	height: 20px;
+	border: 0;
+	padding: 0;
+	background: url(../images/header/search-bar.png) no-repeat right;
+	cursor: pointer;
+
 }
 
 
@@ -70,6 +118,10 @@ html, body {
 
 .content-container {
 	width: 740px;
+}
+
+.header-nav {
+	margin: 0 0  0 200px;
 }
 
 }

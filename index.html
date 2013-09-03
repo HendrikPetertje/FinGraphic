@@ -1,11 +1,14 @@
 <html>
 <head>
 	<title>test-site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/script/javascript.js"></script>
 	
 </head>
 <body>
@@ -19,11 +22,20 @@
 				<div class="header-nav">
 					<div class="header-nav-navigation">
 						<ul>
-							<li>Overzicht</li>
-							<li>Discussie</li>
-							<li>FAQ</li>
+							<li class="nav-active" id="overzicht-link"><a href="#" >Overzicht</a></li>
+							<li id="discussie-link"><a href="#">Discussie</a></li>
+							<li id="faq-link"><a href="#">FAQ</a></li>
 						</ul>
 					</div>
+				</div>
+
+				<div class="header-search">
+					<form>
+						<div class="block"><input type="text" name="search" value="Zoeken" class="header-search-text" onblur="if (this.value == '') {this.value = 'Zoeken';}"
+ onfocus="if (this.value == 'Zoeken') {this.value = '';}"></div>
+						<div class="block"><input type="submit" value="" class="block header-search-submit" id="search-submit"></div>
+						
+					</form>
 				</div>
 
 				<div class="cleardiv"></div>
