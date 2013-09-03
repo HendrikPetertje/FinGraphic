@@ -1,0 +1,96 @@
+/*Script file part of FinGraphic copyright Peter van der Meulen and Pico Reclame 2013. Planning on using the contents of my work? contact me at www.github.com/amonfog*/
+
+/*Basic Elements*/
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.cleardiv {
+	clear:both;
+}
+
+.block {
+	float:left;
+}
+
+.main-container {
+	width:100%;
+}
+
+.content-container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.relative-container {
+	position: relative;
+}
+
+.fixed-container {
+	position: fixed;
+	z-index: 1000
+}
+
+/*header*/
+.header-container {
+	height:40px;
+	background: #2ecc71;
+	top:0;
+}
+
+.header-logo {
+	padding: 7.5px 0 ;
+}
+
+.header-nav {
+	left:0;
+	right:0;
+	background: yellow;
+	text-align: center;
+}
+
+.header-nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type:none; 
+}
+
+.header-nav ul li {
+	float: left;
+}
+
+
+/* #Tablet (portrait)
+======================= */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+.content-container {
+	width: 740px;
+}
+
+}
+
+
+/* #Mobile (Landscape)
+======================= */
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+.content-container {
+	width: 450px;
+}
+
+}
+
+/* #Mobile (portrait)
+======================= */
+ @media only screen and (min-width: 300px) and (max-width: 479px) {
+ 	
+.content-container {
+	width: 300px;
+}
+
+}
