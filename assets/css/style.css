@@ -25,6 +25,11 @@ html, body {
 	margin: 0 auto;
 }
 
+.main-content-container {
+	margin: 90px auto 0 auto;
+	width: 960px;
+}
+
 .relative-container {
 	position: relative;
 }
@@ -60,7 +65,11 @@ html, body {
 }
 
 .header-nav a:hover {
-	color: #27AE60;
+	color: #DDD;
+}
+
+.nav-active a:hover {
+	color: #FFF;
 }
 
 .header-nav ul {
@@ -105,7 +114,7 @@ html, body {
 	height: 20px;
 	border: 0;
 	padding: 0;
-	background: url(../images/header/search-bar.png) no-repeat right;
+	background: url(../images/header/search-bar-01.png) no-repeat right;
 	cursor: pointer;
 
 }
@@ -150,13 +159,40 @@ input:focus {
 	text-decoration: none;
 }
 
-.subnav-active a {
+.overzicht-sub-header a:hover {
+	color: #DDD;
+}
+
+.subnav-active .nav-inkomsten-a {
 	color: #27AE60;
 }
 
-.overzicht-sub-header a:hover {
-	color: #2ECC71;
+.subnav-active .nav-consumenten-a {
+	color: #D35400;
 }
+
+.subnav-active .nav-consumenten-a {
+	color: #D35400;
+}
+
+.subnav-active .nav-bezuinigingen-a {
+	color: #2980B9;
+}
+
+.subnav-active .nav-bevolking-a {
+	color: #C0392B;
+}
+
+.subnav-active .nav-financieel-a {
+	color: #F39C12;
+}
+
+/*Inkomsten content*/
+
+.inkomsten-content {
+
+}
+
 
 /* #Tablet (portrait)
 ======================= */
@@ -171,6 +207,10 @@ input:focus {
 	margin: 0 0  0 200px;
 }
 
+.overzicht-sub-header ul li {
+	padding: 9px 2px;
+}
+
 }
 
 
@@ -180,6 +220,36 @@ input:focus {
 	
 .content-container {
 	width: 450px;
+}
+
+.overzicht-sub-header ul li {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.overzicht-sub-header {
+	height: auto;
+}
+
+.header-nav {
+	margin: 0;
+}
+
+.header-nav ul li {
+	margin: 0 5px;
+}
+
+.overzicht-sub-header {
+	top: 80px;
+}
+
+.header-container {
+	height: 80px;
+}
+
+.header-search {
+	margin: 10px 140px 10px 0px;
 }
 
 }
