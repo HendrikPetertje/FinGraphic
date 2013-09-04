@@ -7,22 +7,36 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/charts.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/script/javascript.js"></script>
+		<script type="text/javascript" src="assets/script/charts_data.js"></script>
+	<script type="text/javascript" src="assets/script/charts/Chart.js"></script>
+
 </head>
 <body>
 
 	<div class="block graphic-block inkomsten-block">
-		hier de data
+  	<div class="graphic-title inkomsten-title">Titel</div>
+		<canvas id="canvas" height="190" width="280"></canvas>
+		<script>
+    		chart_one();
+		</script>
 	</div>
-
+ 
 	<div class="block graphic-block inkomsten-block">
-		hier de data
+		<div class="graphic-title inkomsten-title">Titel</div>
+		<div class="graphic-content inkomsten-content">
+			data
+		</div>
 	</div>
-
+ 
 	<div class="block last-graphic-block inkomsten-block">
-		hier de data
+		<div class="graphic-title inkomsten-title">Titel</div>
+		<div class="graphic-content inkomsten-content">
+			data
+		</div>
 	</div>
 
 <!-- Let op de aanwezigheid van het laatste block die heeft een andere class -->
@@ -31,3 +45,4 @@
 
 </body>
 </html>
+
