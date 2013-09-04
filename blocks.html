@@ -16,19 +16,164 @@
 
 </head>
 <body>
+<!-------------------------------INKOMSTEN & UITGAVEN------------------------------>
 
 	<div class="block graphic-block inkomsten-block">
-  	<div class="graphic-title inkomsten-title">Titel</div>
-		<canvas id="canvas" height="190" width="280"></canvas>
-		<script>
-    		chart_one();
-		</script>
+  	<div class="graphic-title inkomsten-title">Inkomsten Totaal Particulier</div>
+  		<div class="graphic-content inkomsten-content">
+			<canvas id="income_particular" height="190" width="280"></canvas>
+			<script>
+	    		income_particular();
+			</script>
+		</div>
 	</div>
  
 	<div class="block graphic-block inkomsten-block">
-		<div class="graphic-title inkomsten-title">Titel</div>
+		<div class="graphic-title inkomsten-title">Prijzen voedingsmiddelen en alc. Vrije dranken</div>
 		<div class="graphic-content inkomsten-content">
-			data
+			<canvas id="......" height="190" width="280"></canvas>
+			<script>
+	    		......();
+			</script>
+		</div>
+	</div>
+ 
+	<div class="block last-graphic-block inkomsten-block">
+		<div class="graphic-title inkomsten-title">Alcoholhoudende dranken en tabak</div>
+		<div class="graphic-content inkomsten-content">
+			<canvas id="....." height="190" width="280"></canvas>
+			<script>
+	    		.....();
+			</script>
+		</div>
+	</div>
+
+<!-- Let op de aanwezigheid van het laatste block die heeft een andere class -->
+
+<!-- zet even zo'n melding achter het einde van elke 3 blocks -->
+
+<!-------------------------------CONSUMENTENPRIJZEN------------------------------>
+
+	<div class="block graphic-block inkomsten-block">
+  	<div class="graphic-title inkomsten-title">Consumenten prijzen </div>
+  		<div class="graphic-content inkomsten-content">
+			<canvas id="consumers_prices" height="190" width="280"></canvas>
+			<script>
+	    		consumers_prices();
+			</script>
+		</div>
+	</div>
+ 
+	<div class="block graphic-block inkomsten-block">
+		<div class="graphic-title inkomsten-title">Prijzen voedingsmiddelen en alc. Vrije dranken</div>
+		<div class="graphic-content inkomsten-content">
+			<canvas id="food_prices" height="190" width="280"></canvas>
+			<script>
+	    		food_prices();
+			</script>
+		</div>
+	</div>
+ 
+	<div class="block last-graphic-block inkomsten-block">
+		<div class="graphic-title inkomsten-title">Alcoholhoudende dranken en tabak</div>
+		<div class="graphic-content inkomsten-content">
+			<canvas id="alcohol" height="190" width="280"></canvas>
+			<script>
+	    		alcohol();
+			</script>
+		</div>
+	</div>
+
+<!-- Let op de aanwezigheid van het laatste block die heeft een andere class -->
+
+<!-- zet even zo'n melding achter het einde van elke 3 blocks -->
+
+	<div class="block graphic-block inkomsten-block">
+  	<div class="graphic-title inkomsten-title">Kleding en schoeisel</div>
+  		<div class="graphic-content inkomsten-content">
+			<canvas id="clothing" height="190" width="280"></canvas>
+			<script>
+	    		clothing();
+			</script>
+		</div>
+	</div>
+ 
+	<div class="block graphic-block inkomsten-block">
+		<div class="graphic-title inkomsten-title">Huisvesting, water en energie</div>
+		<div class="graphic-content inkomsten-content">
+			<canvas id="housing" height="190" width="280"></canvas>
+			<script>
+	    		housing();
+			</script>
+		</div>
+	</div>
+ 
+	<div class="block last-graphic-block inkomsten-block">
+		<div class="graphic-title inkomsten-title">Gezondheid</div>
+		<div class="graphic-content inkomsten-content">
+			<canvas id="health" height="190" width="280"></canvas>
+			<script>
+	    		health();
+			</script>
+		</div>
+	</div>
+
+<!-- Let op de aanwezigheid van het laatste block die heeft een andere class -->
+
+<!-- zet even zo'n melding achter het einde van elke 3 blocks -->
+
+<div class="block graphic-block inkomsten-block">
+  	<div class="graphic-title inkomsten-title">Transport</div>
+  		<div class="graphic-content inkomsten-content">
+			<canvas id="transport" height="190" width="280"></canvas>
+			<script>
+	    		transport();
+			</script>
+		</div>
+	</div>
+ 
+	<div class="block graphic-block inkomsten-block">
+		<div class="graphic-title inkomsten-title">Communicatie</div>
+		<div class="graphic-content inkomsten-content">
+			<canvas id="communication" height="190" width="280"></canvas>
+			<script>
+	    		communication();
+			</script>
+		</div>
+	</div>
+ 
+	<div class="block last-graphic-block inkomsten-block">
+		<div class="graphic-title inkomsten-title">Recreatie en cultuur</div>
+		<div class="graphic-content inkomsten-content">
+			<canvas id="recreation" height="190" width="280"></canvas>
+			<script>
+	    		recreation();
+			</script>
+		</div>
+	</div>
+
+<!-- Let op de aanwezigheid van het laatste block die heeft een andere class -->
+
+<!-- zet even zo'n melding achter het einde van elke 3 blocks -->
+
+<!-------------------------------WERKLOOSHEID------------------------------>
+	<div class="block graphic-block inkomsten-block">
+  	<div class="graphic-title inkomsten-title">Werkloosheid (2013 1e kwartaal - x1000)</div>
+  		<div class="graphic-content inkomsten-content">
+			<canvas id="unemployment_one" height="190" width="280"></canvas>
+			<script>
+	    		unemployment_one();
+			</script>
+		</div>
+	</div>
+ 
+	<div class="block graphic-block inkomsten-block">
+		<div class="graphic-title inkomsten-title">Werkloosheid (2013 1e kwartaal - %)</div>
+		<div class="graphic-content inkomsten-content">
+			<canvas id="unemployment_two" height="190" width="280"></canvas>
+			<script>
+	    		unemployment_two();
+			</script>
 		</div>
 	</div>
  
@@ -42,6 +187,7 @@
 <!-- Let op de aanwezigheid van het laatste block die heeft een andere class -->
 
 <!-- zet even zo'n melding achter het einde van elke 3 blocks -->
+
 
 </body>
 </html>
