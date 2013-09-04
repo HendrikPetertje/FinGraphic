@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>test-site</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -12,8 +12,8 @@
 	
 </head>
 <body>
-	<div class="relative-container">
-		<div class="main-container header-container fixed-container">
+	<div class="relative-container relative-main">
+		<div class="mainheader-container header-container fixed-container">
 			<div class="content-container header-inner">
 				<div class="header-logo block">
 					<img src="assets/images/header/header-logo.png" width="124px" height="35px">
@@ -22,8 +22,8 @@
 				<div class="header-nav">
 					<div class="header-nav-navigation">
 						<ul>
-							<li class="nav-active" id="overzicht-link"><a href="#" id="overzicht-link-a" class="scroll">Overzicht</a></li>
-							<li id="discussie-link"><a href="#" id="discussie-link-a" class="scroll">Discussie</a></li>
+							<li class="nav-active" id="overzicht-link"><a href="#inkomsten-page" id="overzicht-link-a" class="scroll">Overzicht</a></li>
+							<li id="discussie-link"><a href="#discussie-page" id="discussie-link-a" class="scroll">Discussie</a></li>
 							<li id="faq-link"><a href="#" id="faq-link-a" class="scroll">FAQ</a></li>
 						</ul>
 					</div>
@@ -42,61 +42,272 @@
 			</div>
 		</div><!-- First header -->
 
-		<div class="overzicht-sub-header fixed-container main-container" id="overzicht-sub-header">
+		<div class="overzicht-sub-header fixed-container mainheader-container" id="overzicht-sub-header">
 			
 			<div class="overzicht-sub-inner content-container">
 				<ul class="sub-navigation">
 					<li class="subnav-active subnav" id="nav-inkomsten"><a href="#inkomsten-page" class="nav-inkomsten-a scroll">Inkomsten & Uitgaven</a></li>
-					<li class="subnav" id="nav-consumentenprijzen"><a href="#" class="nav-consumenten-a scroll">Consumentenprijzen</a></li>
-					<li class="subnav" id="nav-bezuinigingen"><a href="#" class="nav-bezuinigingen-a scroll">Bezuinigingen</a></li>
-					<li class="subnav" id="nav-bevolking"><a href="#" class="nav-bevolking-a scroll">Bevolking & Werkloosheid</a></li>
-					<li class="subnav" id="nav-financieel"><a href="#" class="nav-financieel-a scroll">Financiële documenten</a></li>
+					<li class="subnav" id="nav-consumentenprijzen"><a href="#consumenten-page" class="nav-consumenten-a scroll">Consumentenprijzen</a></li>
+					<li class="subnav" id="nav-bezuinigingen"><a href="#bezuinigingen-page" class="nav-bezuinigingen-a scroll">Bezuinigingen</a></li>
+					<li class="subnav" id="nav-bevolking"><a href="#bevolking-page" class="nav-bevolking-a scroll">Bevolking & Werkloosheid</a></li>
+					<li class="subnav" id="nav-financieel"><a href="#financieel-page" class="nav-financieel-a scroll">Financiële documenten</a></li>
 				</ul>
 			</div>
 
 		</div><!-- sub-header -->
 	</div> <!-- relative-container -->
+	<div id="inkomsten-page"></div>
+<div class="relative-container relative-maincontent">
+	<div class="main-absolute">
 
-	<div class="main-container inkomsten-container" id="inkomsten-page">
-		<div class="main-content-container main-content inkomsten-content">
-			
-			<div class="inkomsten-inleiding inleiding-block">
-				<div class="inkomsten-inleiding-title inleiding-title">
-					<div>Inkomsten & Uitgaven</div>
-				</div>
-				<div class="inkomsten-inleiding-content inleiding-content">
-					<div class="inleiding-content-left">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec molestie dui. Morbi non enim consequat, semper ante eu, pellentesque lorem. In hac habitasse platea dictumst. Quisque eget diam a augue ullamcorper dictum ut eget magna. Etiam congue dui est, vel molestie nunc auctor in. Vestibulum accumsan, lacus eget congue vestibulum, turpis diam iaculis augue, varius dapibus justo erat nec nibh. Aliquam eu accumsan velit. Maecenas tincidunt tincidunt elementum. Nam ullamcorper consectetur mauris eu dictum. Nunc volutpat vestibulum neque in blandit. Nunc interdum sapien at risus sollicitudin ultricies. Phasellus sit amet sapien leo. <br>
-						<br>
-						Integer a dolor id nunc sodales facilisis non at lectus. Vivamus lobortis libero et lorem posuere, at bibendum quam placerat. In in dui mi. Aenean fermentum metus vel nibh semper, eu pharetra mauris vulputate. Fusce non turpis et libero pharetra feugiat in et ipsum. Nullam ut sapien sed leo sollicitudin lobortis. Maecenas purus nunc, tristique at eros vitae, facilisis blandit mi. Nam non sem placerat, 
+		<div class="main-container inkomsten-container">
+			<div class="main-content-container main-content inkomsten-content">
+				
+				<div class="inkomsten-block inleiding-block">
+					<div class="inkomsten-title inleiding-title">
+						Inkomsten & Uitgaven
 					</div>
-					<div class="inleiding-content-right"></div>
+					<div class="inkomsten-inleiding-content inleiding-content">
+						<div class="inleiding-content-left">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec molestie dui. Morbi non enim consequat, semper ante eu, pellentesque lorem. In hac habitasse platea dictumst. Quisque eget diam a augue ullamcorper dictum ut eget magna. Etiam congue dui est, vel molestie nunc auctor in. Vestibulum accumsan, lacus eget congue vestibulum, turpis diam iaculis augue, varius dapibus justo erat nec nibh. Aliquam eu accumsan velit. Maecenas tincidunt tincidunt elementum. Nam ullamcorper consectetur mauris eu dictum. Nunc volutpat vestibulum neque in blandit. Nunc interdum sapien at risus sollicitudin ultricies. Phasellus sit amet sapien leo. <br>
+							<br>
+							Integer a dolor id nunc sodales facilisis non at lectus. Vivamus lobortis libero et lorem posuere, at bibendum quam placerat. In in dui mi. Aenean fermentum metus vel nibh semper, eu pharetra mauris vulputate. Fusce non turpis et libero pharetra feugiat in et ipsum. Nullam ut sapien sed leo sollicitudin lobortis. Maecenas purus nunc, tristique at eros vitae, facilisis blandit mi. Nam non sem placerat, 
+						</div>
+						<div class="inleiding-content-right"></div>
+						<div class="cleardiv"></div>
+					</div>
 				</div>
-			</div>
 
-			<div class="block graphic-block inkomsten-block">
-				<div class="graphic-title inkomsten-title">Titel</div>
-				<div class="graphic-content inkomsten-content">
-					data
+				<div class="block graphic-block inkomsten-block">
+					<div class="graphic-title inkomsten-title">Titel</div>
+					<div class="graphic-content inkomsten-content">
+						data
+					</div>
 				</div>
-			</div>
 
-			<div class="block graphic-block inkomsten-block">
-				<div class="graphic-title inkomsten-title">Titel</div>
-				<div class="graphic-content inkomsten-content">
-					data
+				<div class="block graphic-block inkomsten-block">
+					<div class="graphic-title inkomsten-title">Titel</div>
+					<div class="graphic-content inkomsten-content">
+						data
+					</div>
 				</div>
-			</div>
 
-			<div class="block last-graphic-block inkomsten-block">
-				<div class="graphic-title inkomsten-title">Titel</div>
-				<div class="graphic-content inkomsten-content">
-					data
+				<div class="block last-graphic-block inkomsten-block">
+					<div class="graphic-title inkomsten-title">Titel</div>
+					<div class="graphic-content inkomsten-content">
+						data
+					</div>
 				</div>
-			</div>
+				<div class="cleardiv"></div>
 
+			</div>
 		</div>
+
+		<div id="consumenten-page"></div>
+		<div class="main-container consumenten-container" >
+			<div class="main-content-container main-content consumenten-content">
+				
+				<div class="consumenten-block inleiding-block">
+					<div class="consumenten-title inleiding-title">
+						Inkomsten & Uitgaven
+					</div>
+					<div class="consumenten-inleiding-content inleiding-content">
+						<div class="inleiding-content-left">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec molestie dui. Morbi non enim consequat, semper ante eu, pellentesque lorem. In hac habitasse platea dictumst. Quisque eget diam a augue ullamcorper dictum ut eget magna. Etiam congue dui est, vel molestie nunc auctor in. Vestibulum accumsan, lacus eget congue vestibulum, turpis diam iaculis augue, varius dapibus justo erat nec nibh. Aliquam eu accumsan velit. Maecenas tincidunt tincidunt elementum. Nam ullamcorper consectetur mauris eu dictum. Nunc volutpat vestibulum neque in blandit. Nunc interdum sapien at risus sollicitudin ultricies. Phasellus sit amet sapien leo. <br>
+							<br>
+							Integer a dolor id nunc sodales facilisis non at lectus. Vivamus lobortis libero et lorem posuere, at bibendum quam placerat. In in dui mi. Aenean fermentum metus vel nibh semper, eu pharetra mauris vulputate. Fusce non turpis et libero pharetra feugiat in et ipsum. Nullam ut sapien sed leo sollicitudin lobortis. Maecenas purus nunc, tristique at eros vitae, facilisis blandit mi. Nam non sem placerat, 
+						</div>
+						<div class="inleiding-content-right"></div>
+						<div class="cleardiv"></div>
+					</div>
+				</div>
+
+				<div class="block graphic-block consumenten-block">
+					<div class="graphic-title consumenten-title">Titel</div>
+					<div class="graphic-content consumenten-content">
+						data
+					</div>
+				</div>
+
+				<div class="block graphic-block consumenten-block">
+					<div class="graphic-title consumenten-title">Titel</div>
+					<div class="graphic-content consumenten-content">
+						data
+					</div>
+				</div>
+
+				<div class="block last-graphic-block consumenten-block">
+					<div class="graphic-title consumenten-title">Titel</div>
+					<div class="graphic-content consumenten-content">
+						data
+					</div>
+				</div>
+				<div class="cleardiv"></div>
+
+			</div>
+		</div>
+
+		<div id="bezuinigingen-page"></div>
+		<div class="main-container bezuinigingen-container" >
+			<div class="main-content-container main-content consumenten-content">
+				
+				<div class="bezuinigingen-block inleiding-block">
+					<div class="bezuinigingen-title inleiding-title">
+						Inkomsten & Uitgaven
+					</div>
+					<div class="bezuinigingen-inleiding-content inleiding-content">
+						<div class="inleiding-content-left">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec molestie dui. Morbi non enim consequat, semper ante eu, pellentesque lorem. In hac habitasse platea dictumst. Quisque eget diam a augue ullamcorper dictum ut eget magna. Etiam congue dui est, vel molestie nunc auctor in. Vestibulum accumsan, lacus eget congue vestibulum, turpis diam iaculis augue, varius dapibus justo erat nec nibh. Aliquam eu accumsan velit. Maecenas tincidunt tincidunt elementum. Nam ullamcorper consectetur mauris eu dictum. Nunc volutpat vestibulum neque in blandit. Nunc interdum sapien at risus sollicitudin ultricies. Phasellus sit amet sapien leo. <br>
+							<br>
+							Integer a dolor id nunc sodales facilisis non at lectus. Vivamus lobortis libero et lorem posuere, at bibendum quam placerat. In in dui mi. Aenean fermentum metus vel nibh semper, eu pharetra mauris vulputate. Fusce non turpis et libero pharetra feugiat in et ipsum. Nullam ut sapien sed leo sollicitudin lobortis. Maecenas purus nunc, tristique at eros vitae, facilisis blandit mi. Nam non sem placerat, 
+						</div>
+						<div class="inleiding-content-right"></div>
+						<div class="cleardiv"></div>
+					</div>
+				</div>
+
+				<div class="block graphic-block bezuinigingen-block">
+					<div class="graphic-title bezuinigingen-title">Titel</div>
+					<div class="graphic-content bezuinigingen-content">
+						data
+					</div>
+				</div>
+
+				<div class="block graphic-block bezuinigingen-block">
+					<div class="graphic-title bezuinigingen-title">Titel</div>
+					<div class="graphic-content bezuinigingen-content">
+						data
+					</div>
+				</div>
+
+				<div class="block last-graphic-block bezuinigingen-block">
+					<div class="graphic-title bezuinigingen-title">Titel</div>
+					<div class="graphic-content bezuinigingen-content">
+						data
+					</div>
+				</div>
+				<div class="cleardiv"></div>
+
+			</div>
+		</div>
+
+
+		<div id="bevolking-page"></div>
+		<div class="main-container bevolking-container" >
+			<div class="main-content-container main-content consumenten-content">
+				
+				<div class="bevolking-block inleiding-block">
+					<div class="bevolking-title inleiding-title">
+						Inkomsten & Uitgaven
+					</div>
+					<div class="bevolking-inleiding-content inleiding-content">
+						<div class="inleiding-content-left">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec molestie dui. Morbi non enim consequat, semper ante eu, pellentesque lorem. In hac habitasse platea dictumst. Quisque eget diam a augue ullamcorper dictum ut eget magna. Etiam congue dui est, vel molestie nunc auctor in. Vestibulum accumsan, lacus eget congue vestibulum, turpis diam iaculis augue, varius dapibus justo erat nec nibh. Aliquam eu accumsan velit. Maecenas tincidunt tincidunt elementum. Nam ullamcorper consectetur mauris eu dictum. Nunc volutpat vestibulum neque in blandit. Nunc interdum sapien at risus sollicitudin ultricies. Phasellus sit amet sapien leo. <br>
+							<br>
+							Integer a dolor id nunc sodales facilisis non at lectus. Vivamus lobortis libero et lorem posuere, at bibendum quam placerat. In in dui mi. Aenean fermentum metus vel nibh semper, eu pharetra mauris vulputate. Fusce non turpis et libero pharetra feugiat in et ipsum. Nullam ut sapien sed leo sollicitudin lobortis. Maecenas purus nunc, tristique at eros vitae, facilisis blandit mi. Nam non sem placerat, 
+						</div>
+						<div class="inleiding-content-right"></div>
+						<div class="cleardiv"></div>
+					</div>
+				</div>
+
+				<div class="block graphic-block bevolking-block">
+					<div class="graphic-title bevolking-title">Titel</div>
+					<div class="graphic-content bevolking-content">
+						data
+					</div>
+				</div>
+
+				<div class="block graphic-block bevolking-block">
+					<div class="graphic-title bevolking-title">Titel</div>
+					<div class="graphic-content bevolking-content">
+						data
+					</div>
+				</div>
+
+				<div class="block last-graphic-block bevolking-block">
+					<div class="graphic-title bevolking-title">Titel</div>
+					<div class="graphic-content bevolking-content">
+						data
+					</div>
+				</div>
+				<div class="cleardiv"></div>
+
+			</div>
+		</div>
+
+		<div id="financieel-page"></div>
+		<div class="main-container financieel-container" >
+			<div class="main-content-container main-content consumenten-content">
+				
+				<div class="financieel-block inleiding-block">
+					<div class="financieel-title inleiding-title">
+						Inkomsten & Uitgaven
+					</div>
+					<div class="financieel-inleiding-content inleiding-content">
+						<div class="inleiding-content-left">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec molestie dui. Morbi non enim consequat, semper ante eu, pellentesque lorem. In hac habitasse platea dictumst. Quisque eget diam a augue ullamcorper dictum ut eget magna. Etiam congue dui est, vel molestie nunc auctor in. Vestibulum accumsan, lacus eget congue vestibulum, turpis diam iaculis augue, varius dapibus justo erat nec nibh. Aliquam eu accumsan velit. Maecenas tincidunt tincidunt elementum. Nam ullamcorper consectetur mauris eu dictum. Nunc volutpat vestibulum neque in blandit. Nunc interdum sapien at risus sollicitudin ultricies. Phasellus sit amet sapien leo. <br>
+							<br>
+							Integer a dolor id nunc sodales facilisis non at lectus. Vivamus lobortis libero et lorem posuere, at bibendum quam placerat. In in dui mi. Aenean fermentum metus vel nibh semper, eu pharetra mauris vulputate. Fusce non turpis et libero pharetra feugiat in et ipsum. Nullam ut sapien sed leo sollicitudin lobortis. Maecenas purus nunc, tristique at eros vitae, facilisis blandit mi. Nam non sem placerat, 
+						</div>
+						<div class="inleiding-content-right"></div>
+						<div class="cleardiv"></div>
+					</div>
+				</div>
+
+				<div class="block graphic-block financieel-block">
+					<div class="graphic-title financieel-title">Titel</div>
+					<div class="graphic-content financieel-content">
+						data
+					</div>
+				</div>
+
+				<div class="block graphic-block financieel-block">
+					<div class="graphic-title financieel-title">Titel</div>
+					<div class="graphic-content financieel-content">
+						data
+					</div>
+				</div>
+
+				<div class="block last-graphic-block financieel-block">
+					<div class="graphic-title financieel-title">Titel</div>
+					<div class="graphic-content financieel-content">
+						data
+					</div>
+				</div>
+				<div class="cleardiv"></div>
+
+			</div>
+		</div>
+
+		<div id="discussie-page"></div>
+		<div class="main-container discussie-container" >
+			<div class="main-content-container main-content consumenten-content">
+				
+				<div class="discussie-block inleiding-block">
+					<div class="discussie-title inleiding-title">
+						Inkomsten & Uitgaven
+					</div>
+					<div class="discussie-inleiding-content inleiding-content">
+						<div class="inleiding-content-left">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec molestie dui. Morbi non enim consequat, semper ante eu, pellentesque lorem. In hac habitasse platea dictumst. Quisque eget diam a augue ullamcorper dictum ut eget magna. Etiam congue dui est, vel molestie nunc auctor in. Vestibulum accumsan, lacus eget congue vestibulum, turpis diam iaculis augue, varius dapibus justo erat nec nibh. Aliquam eu accumsan velit. Maecenas tincidunt tincidunt elementum. Nam ullamcorper consectetur mauris eu dictum. Nunc volutpat vestibulum neque in blandit. Nunc interdum sapien at risus sollicitudin ultricies. Phasellus sit amet sapien leo. <br>
+							<br>
+							Integer a dolor id nunc sodales facilisis non at lectus. Vivamus lobortis libero et lorem posuere, at bibendum quam placerat. In in dui mi. Aenean fermentum metus vel nibh semper, eu pharetra mauris vulputate. Fusce non turpis et libero pharetra feugiat in et ipsum. Nullam ut sapien sed leo sollicitudin lobortis. Maecenas purus nunc, tristique at eros vitae, facilisis blandit mi. Nam non sem placerat, 
+						</div>
+						<div class="inleiding-content-right"></div>
+						<div class="cleardiv"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
 	</div>
+</div>
+	
 
 </body>
 </html>
