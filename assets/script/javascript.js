@@ -1,6 +1,15 @@
 // Script file part of FinGraphic copyright Peter van der Meulen and Pico Reclame 2013. Planning on using the contents of my work? contact me at www.github.com/amonfog
 
 $( document ).ready(function(){
+
+	// variables for spaces
+
+	var docstartHeight = -1 ;
+	var inkomstenHeight = $('.inkomsten-container').height() + docstartHeight;
+	var consumentenHeight = $('.consumenten-container').height() + inkomstenHeight;
+	var bezuinigingenHeight = $('.bezuinigingen-container').height() + consumentenHeight;
+	var bezuinigingenHeight = $('.bezuinigingen-container').height() +
+
 	
 	// navigation to overzicht
 	$('#overzicht-link').click(function(){

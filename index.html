@@ -6,7 +6,10 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/charts.css">
 	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="assets/script/charts_data.js"></script>
+	<script type="text/javascript" src="assets/script/charts/Chart.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/script/javascript.js"></script>
 	
@@ -78,24 +81,33 @@
 					</div>
 				</div>
 
-				<div class="block graphic-block inkomsten-block">
-					<div class="graphic-title inkomsten-title">Titel</div>
+				<div class="block graphic-block">
+					<div class="graphic-title inkomsten-title">Inkomsten Totaal Particulier</div>
 					<div class="graphic-content inkomsten-content">
-						data
+						<canvas id="income_particular" height="190" width="280"></canvas>
+						<script>
+				    		income_particular();
+						</script>
 					</div>
 				</div>
 
-				<div class="block graphic-block inkomsten-block">
+				<div class="block graphic-block">
 					<div class="graphic-title inkomsten-title">Titel</div>
 					<div class="graphic-content inkomsten-content">
-						data
+						<canvas id="......" height="190" width="280"></canvas>
+						<script>
+				    		......();
+						</script>
 					</div>
 				</div>
 
-				<div class="block last-graphic-block inkomsten-block">
+				<div class="block last-graphic-block">
 					<div class="graphic-title inkomsten-title">Titel</div>
 					<div class="graphic-content inkomsten-content">
-						data
+						<canvas id="....." height="190" width="280"></canvas>
+						<script>
+				    		.....();
+						</script>
 					</div>
 				</div>
 				<div class="cleardiv"></div>
@@ -109,7 +121,7 @@
 				
 				<div class="consumenten-block inleiding-block">
 					<div class="consumenten-title inleiding-title">
-						Inkomsten & Uitgaven
+						Consumentenprijzen
 					</div>
 					<div class="consumenten-inleiding-content inleiding-content">
 						<div class="inleiding-content-left">
@@ -122,24 +134,33 @@
 					</div>
 				</div>
 
-				<div class="block graphic-block consumenten-block">
-					<div class="graphic-title consumenten-title">Titel</div>
+				<div class="block graphic-block">
+					<div class="graphic-title consumenten-title">Consumenten prijzen</div>
 					<div class="graphic-content consumenten-content">
-						data
+						<canvas id="consumers_prices" height="190" width="280"></canvas>
+			<script>
+	    		consumers_prices();
+			</script>
 					</div>
 				</div>
 
-				<div class="block graphic-block consumenten-block">
-					<div class="graphic-title consumenten-title">Titel</div>
+				<div class="block graphic-block">
+					<div class="graphic-title consumenten-title">Voedingsmiddelen en alc. Vrije dranken</div>
 					<div class="graphic-content consumenten-content">
-						data
+						<canvas id="food_prices" height="190" width="280"></canvas>
+			<script>
+	    		food_prices();
+			</script>
 					</div>
 				</div>
 
-				<div class="block last-graphic-block consumenten-block">
-					<div class="graphic-title consumenten-title">Titel</div>
+				<div class="block last-graphic-block">
+					<div class="graphic-title consumenten-title">Alcoholhoudende dranken en tabak</div>
 					<div class="graphic-content consumenten-content">
-						data
+						<canvas id="alcohol" height="190" width="280"></canvas>
+			<script>
+	    		alcohol();
+			</script>
 					</div>
 				</div>
 				<div class="cleardiv"></div>
@@ -153,7 +174,7 @@
 				
 				<div class="bezuinigingen-block inleiding-block">
 					<div class="bezuinigingen-title inleiding-title">
-						Inkomsten & Uitgaven
+						Bezuinigingen
 					</div>
 					<div class="bezuinigingen-inleiding-content inleiding-content">
 						<div class="inleiding-content-left">
@@ -169,21 +190,21 @@
 				<div class="block graphic-block bezuinigingen-block">
 					<div class="graphic-title bezuinigingen-title">Titel</div>
 					<div class="graphic-content bezuinigingen-content">
-						data
+						Sorry Hier missen we enkele gegevens :(
 					</div>
 				</div>
 
 				<div class="block graphic-block bezuinigingen-block">
 					<div class="graphic-title bezuinigingen-title">Titel</div>
 					<div class="graphic-content bezuinigingen-content">
-						data
+						Sorry Hier missen we enkele gegevens :(
 					</div>
 				</div>
 
 				<div class="block last-graphic-block bezuinigingen-block">
 					<div class="graphic-title bezuinigingen-title">Titel</div>
 					<div class="graphic-content bezuinigingen-content">
-						data
+						Sorry Hier missen we enkele gegevens :(
 					</div>
 				</div>
 				<div class="cleardiv"></div>
@@ -198,7 +219,7 @@
 				
 				<div class="bevolking-block inleiding-block">
 					<div class="bevolking-title inleiding-title">
-						Inkomsten & Uitgaven
+						Bevolking & Werkloosheid
 					</div>
 					<div class="bevolking-inleiding-content inleiding-content">
 						<div class="inleiding-content-left">
@@ -211,24 +232,30 @@
 					</div>
 				</div>
 
-				<div class="block graphic-block bevolking-block">
-					<div class="graphic-title bevolking-title">Titel</div>
+				<div class="block graphic-block ">
+					<div class="graphic-title bevolking-title">Werkloosheid (2013 1e kwartaal - x1000)</div>
 					<div class="graphic-content bevolking-content">
-						data
+						<canvas id="unemployment_one" height="190" width="280"></canvas>
+			<script>
+	    		unemployment_one();
+			</script>
 					</div>
 				</div>
 
-				<div class="block graphic-block bevolking-block">
-					<div class="graphic-title bevolking-title">Titel</div>
+				<div class="block graphic-block ">
+					<div class="graphic-title bevolking-title">Werkloosheid (2013 1e kwartaal - %)</div>
 					<div class="graphic-content bevolking-content">
-						data
+						<canvas id="unemployment_two" height="190" width="280"></canvas>
+			<script>
+	    		unemployment_two();
+			</script>
 					</div>
 				</div>
 
 				<div class="block last-graphic-block bevolking-block">
 					<div class="graphic-title bevolking-title">Titel</div>
 					<div class="graphic-content bevolking-content">
-						data
+						Hier hebben we heelaas nog geen data :(
 					</div>
 				</div>
 				<div class="cleardiv"></div>
@@ -242,7 +269,7 @@
 				
 				<div class="financieel-block inleiding-block">
 					<div class="financieel-title inleiding-title">
-						Inkomsten & Uitgaven
+						Financiële documenten
 					</div>
 					<div class="financieel-inleiding-content inleiding-content">
 						<div class="inleiding-content-left">
@@ -286,15 +313,12 @@
 				
 				<div class="discussie-block inleiding-block">
 					<div class="discussie-title inleiding-title">
-						Inkomsten & Uitgaven
+						Discussie
 					</div>
 					<div class="discussie-inleiding-content inleiding-content">
 						<div class="inleiding-content-left">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec molestie dui. Morbi non enim consequat, semper ante eu, pellentesque lorem. In hac habitasse platea dictumst. Quisque eget diam a augue ullamcorper dictum ut eget magna. Etiam congue dui est, vel molestie nunc auctor in. Vestibulum accumsan, lacus eget congue vestibulum, turpis diam iaculis augue, varius dapibus justo erat nec nibh. Aliquam eu accumsan velit. Maecenas tincidunt tincidunt elementum. Nam ullamcorper consectetur mauris eu dictum. Nunc volutpat vestibulum neque in blandit. Nunc interdum sapien at risus sollicitudin ultricies. Phasellus sit amet sapien leo. <br>
-							<br>
-							Integer a dolor id nunc sodales facilisis non at lectus. Vivamus lobortis libero et lorem posuere, at bibendum quam placerat. In in dui mi. Aenean fermentum metus vel nibh semper, eu pharetra mauris vulputate. Fusce non turpis et libero pharetra feugiat in et ipsum. Nullam ut sapien sed leo sollicitudin lobortis. Maecenas purus nunc, tristique at eros vitae, facilisis blandit mi. Nam non sem placerat, 
+							<img src="assets/images/discussie.png">
 						</div>
-						<div class="inleiding-content-right"></div>
 						<div class="cleardiv"></div>
 					</div>
 				</div>
