@@ -39,6 +39,22 @@ html, body {
 	z-index: 1000
 }
 
+.graphic-block {
+	width: 280px;
+	height: 190px;
+	margin: 20px 30px 20px 0;
+	padding: 10px;
+	background: #2980B9;
+}
+
+.last-graphic-block {
+	width: 280px;
+	height: 190px;
+	margin: 20px 0px 20px 0;
+	padding: 10px;
+	background: #2980B9;
+}
+
 /*header*/
 .header-container {
 	height:40px;
